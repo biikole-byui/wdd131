@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Kenya</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kenya</h1>
+    </header>
+
+    <main>
+
+        <picture>
+            <source
+                media="(min-width: 768px)"
+                srcset="images/kenya-large.webp"
+                width="1600"
+                height="900"
+            >
+
+            <img
+                src="images/kenya-small.webp"
+                alt="Beautiful landscape of Kenya"
+                width="600"
+                height="800"
+            >
+        </picture>
+
+        <section class="card data">
+            <h2>Data</h2>
+
+            <p><strong>Area:</strong> 580,367 sq km</p>
+            <p><strong>Population:</strong> 53 Million</p>
+            <p><strong>Capital:</strong> Nairobi</p>
+            <p><strong>Languages:</strong> English, Swahili</p>
+            <p><strong>Currency:</strong> Kenyan Shilling</p>
+            <p><strong>Time Zone:</strong> UTC +3</p>
+            <p><strong>Calling Code:</strong> +254</p>
+            <p><strong>Internet TLD:</strong> .ke</p>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <img
+                src="images/weather.svg"
+                alt="Weather icon"
+                class="weather-icon"
+                width="64"
+                height="64"
+            >
+
+            <p><strong>Temperature:</strong> <span id="temperature">8</span>°C</p>
+            <p><strong>Conditions:</strong> Cloudy</p>
+            <p><strong>Wind:</strong> <span id="windSpeed">10</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> 🌺 Burhan F. Hassan 🌺 Kenya
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

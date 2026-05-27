@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Filtered Temples Gallery</title>
+
+    <meta name="description"
+        content="A beautiful collection and gallery of historic and modern temples.">
+
+    <meta name="author" content="Burhan F. Hassan">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+
+    <header>
+        <h1>Temple Album</h1>
+
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                &#9776;
+            </button>
+
+            <ul id="nav-menu">
+                <li>
+                    <a href="#" id="filter-home" class="active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" id="filter-old">
+                        Old
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" id="filter-new">
+                        New
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" id="filter-large">
+                        Large
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" id="filter-small">
+                        Small
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2 id="gallery-title">
+            Home
+        </h2>
+
+        <div class="temple-grid" id="temple-container">
+
+            <!-- Temple cards generated dynamically with JavaScript -->
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © <span id="currentyear"></span> Burhan F. Hassan
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
